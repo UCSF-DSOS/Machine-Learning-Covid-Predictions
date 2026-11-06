@@ -40,6 +40,12 @@ This workshop uses data from the Coronavirus Disease 2019 (COVID-19) Clinical Da
 
 The dataset includes COVID-19 test outcomes along with patient characteristics such as symptoms, comorbidities, and vital signs. These variables provide an example classification problem in which information about an observation is used to estimate the probability of an outcome.
 
+### Loading Data For Workbooks
+
+To run the notebooks for this workshop, you'll need to copy the data from the covidclincaldata repostitory into a local data repository in your jupyter workspace. Alternatively, you can load the data directly from the csv links in the repository. Techniques for this are covered in "Intro to Python Part 2" and "Analyzing Data with SQL and Python". 
+
+https://github.com/mdcollab/covidclinicaldata/tree/master/data/
+
 ### Data Citation
 
 ```bibtex
