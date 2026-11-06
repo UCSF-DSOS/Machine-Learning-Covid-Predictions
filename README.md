@@ -58,24 +58,24 @@ https://github.com/mdcollab/covidclinicaldata/tree/master/data/
 
 ## Workbooks
 
-### [query-estimates.ipynb](query-estimates.ipynb)
+### [query-estimates.ipynb](https://github.com/geoffswc/Machine-Learning-Covid-Predictions/blob/main/query-estimates.ipynb)
 
 This workbook uses SQL, Python, and pandas to investigate the frequency of positive and negative COVID-19 tests associated with different symptoms, comorbidities, and vital signs.
 
-### [rf-estimates.ipynb](rf-estimates.ipynb)
+### [rf-estimates.ipynb](https://github.com/geoffswc/Machine-Learning-Covid-Predictions/blob/main/rf-estimates.ipynb)
 
 This workbook uses scikit-learn to build a machine learning model that estimates the probability of a positive or negative COVID-19 test based on symptoms and other predictor variables.
 
 The goal is not to produce a highly predictive COVID-19 model, but to introduce techniques for analyzing a dataset using scikit-learn, random forests, and other machine learning algorithms.
 
-### [clean-data.ipynb](clean-data.ipynb)
+### [clean-data.ipynb](https://github.com/geoffswc/Machine-Learning-Covid-Predictions/blob/main/clean-data.ipynb)
 
 This workbook contains code for preparing the COVID-19 data for use with scikit-learn. It demonstrates how to read data from multiple CSV files into a pandas DataFrame, handle missing values, convert positive and negative test results and other categorical values into numerical representations, and write the prepared data to a CSV file for use in a machine learning model.
 
-### [rf-sample-data.ipynb](rf-sample-data.ipynb)
+### [rf-sample-data.ipynb](https://github.com/geoffswc/Machine-Learning-Covid-Predictions/blob/main/rf-sample-data.ipynb)
 
 This workbook builds and populates a scikit-learn model using a very small dataset. Although the four-row dataset is too small to produce reliable predictions, it provides an opportunity to examine how changes in training data and algorithm choice can influence model output.
 
-### [sql-query-page.ipynb](sql-query-page.ipynb)
+### [sql-query-page.ipynb](https://github.com/geoffswc/Machine-Learning-Covid-Predictions/blob/main/sql-query-page.ipynb)
 
 This workbook provides a workspace for ad hoc SQL queries and pandas operations for exploring the COVID-19 dataset.
