@@ -1,4 +1,4 @@
-# Covid Test Outcomes and Analysis
+# Intro to Machine Learning - Predicting Covid Test Outcomes 
 
 ### Short Description
 
