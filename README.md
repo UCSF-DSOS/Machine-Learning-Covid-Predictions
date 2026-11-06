@@ -1,50 +1,48 @@
-# Intro to Machine Learning - Predicting Covid Test Outcomes 
+# Intro to Machine Learning - Predicting COVID Test Outcomes
 
-### Short Description
+## Description
 
-These workbooks investigate a dataset made available from Carbon.  
+This repository contains materials for a hands-on workshop introducing supervised machine learning with Python and scikit-learn. Using COVID-19 clinical data from Carbon Health and Braid Health, participants explore how symptoms, comorbidities, vital signs, and other predictor variables can be used to estimate the probability of a positive or negative COVID-19 test.
 
-https://covidclinicaldata.org
+The workshop builds on earlier exercises using Python, pandas, and SQL to explore COVID testing data. Here, the focus shifts from querying and summarizing data to using that data to build classification models with scikit-learn. Participants work through the process of preparing data for machine learning, selecting predictor and outcome variables, building models, and examining model output.
 
-The workbooks contain python code (pandas, SQL, and scikit-learn) to analyze and make predictions based on observed patient symptoms and testing outcomes.
+The goal of the workshop is to develop practical machine learning skills rather than to build a highly predictive model for COVID-19. Although some symptoms or combinations of symptoms may correlate with test results, the COVID dataset is used primarily as a way to explore how data and algorithm choices influence a machine learning model. The techniques introduced here can be applied to other datasets and classification problems.
 
-### Long Description
+## Objectives
 
-This workshop uses Covid-19 data from Carbon health to introduce the use of SQL and scikit-learn to analyze a dataset. In both cases, we will use predictor variables (symptoms, comorbidities, vitals) to estimate the probability of an outcome variable (positive or negative COVID-19 test). 
+Through a series of hands-on exercises with Python, pandas, SQL, and scikit-learn, participants will learn to:
 
-As you work through these workbooks pre or post workshop, keep in mind that our focus is on building technical skills in SQL and scikit-learn. Although some symptoms or combinations of symptoms may correlate with test results, our goal is not to build a highly predictive model for COVID-19. Instead, we will be using Covid-19 data to generate insight and motivate futher exploration of this dataset and other datasets through SQL and scikit-learn.
+- Identify predictor and outcome variables for a supervised machine learning task
+- Prepare tabular data for use with scikit-learn
+- Handle missing values prior to building a machine learning model
+- Convert categorical and Boolean values into numerical representations
+- Explore relationships between predictor variables and outcomes using SQL and pandas
+- Build a classification model using scikit-learn
+- Use a random forest model to estimate the probability of an outcome
+- Examine how training data and algorithm choice influence model output
+- Use small datasets to investigate how machine learning models work
 
 ### Prerequisites
 
-This workshop is designed for participants who have intermediate programming experience with Python and SQL. You'll need this background to follow along with the coding exercises and problem sets. 
+This workshop is intended for participants who have intermediate programming experience with Python and SQL. Participants should be comfortable working with Python variables, lists, loops, and pandas DataFrames and should have some experience writing SQL queries.
 
-If you're generaally interested, you may enjoy reading through the material or watching the videos or attending a workshop without these skills. 
+Participants without this background may still find it useful to read through the materials, watch the accompanying workshop recording, or attend the workshop to become familiar with the concepts and techniques.
 
-## Workbooks
+### Instructor
 
-### query-estimates.ipynb
+Geoffrey Boushey is a computational and research data science specialist at UCSF and a member of the Library's Data Science and Open Scholarship team. Geoff teaches courses and provides consultations on foundational programming, data analysis, and AI techniques including Python, SQL, Unix, and Version Control.
 
-In this workbook, we use SQL, python, and Pandas to investigate the frequency of positive and negative COVID-19 tests based on different comorbidities and symptoms, and vitals. 
+## Data
 
-### rf-estimates.ipynb
+This workshop uses data from the Coronavirus Disease 2019 (COVID-19) Clinical Data Repository made available by Carbon Health and Braid Health.
 
-In this workbook, we use scikit-learn to build a machine learning model that will predict the probability of a positive or negative test based on symptoms and other input variables. Although we will not (in this workshop, at least) build an especially predictive model, you will learn techniques to analyze a dataset using scikit-learn, random forest, and other ML algorithms. 
+[https://covidclinicaldata.org](https://covidclinicaldata.org)
 
-### clean-data.ipynb
+The dataset includes COVID-19 test outcomes along with patient characteristics such as symptoms, comorbidities, and vital signs. These variables provide an example classification problem in which information about an observation is used to estimate the probability of an outcome.
 
-This workbook contains code for pre-processing data prior to building a model. Read data from multiple CSV files into a pandas dataframe, remove N/A values (that will break scikit-learn), convert Positive and Negative test results and other data points from strings or booleans into integers. Write out results as CSV file that can be used as input to scikit-learn model.
+### Data Citation
 
-### rf-sample-data.ipynb
-
-This workbook contains code to build and populate a scikit-learn model using very little data. Although the tiny (4 row) data set will not provide reliable results, it can provide an opportunity to investigate how data and algorithm choice influence output numbers.
-
-### sql-query-page.ipynb
-
-A workbook for ad-hoc SQL queries and/or pandas operations to explore the dataset.  
-
-### data citation
-
-```
+```bibtex
 @dataset{2020covidclinicaldata,
   author =       {Carbon Health and Braid Health},
   title =        {Coronavirus Disease 2019 (COVID-19) Clinical Data Repository},
@@ -53,3 +51,27 @@ A workbook for ad-hoc SQL queries and/or pandas operations to explore the datase
   version =      {10-20-2020}
 }
 ```
+
+## Workbooks
+
+### [query-estimates.ipynb](query-estimates.ipynb)
+
+This workbook uses SQL, Python, and pandas to investigate the frequency of positive and negative COVID-19 tests associated with different symptoms, comorbidities, and vital signs.
+
+### [rf-estimates.ipynb](rf-estimates.ipynb)
+
+This workbook uses scikit-learn to build a machine learning model that estimates the probability of a positive or negative COVID-19 test based on symptoms and other predictor variables.
+
+The goal is not to produce a highly predictive COVID-19 model, but to introduce techniques for analyzing a dataset using scikit-learn, random forests, and other machine learning algorithms.
+
+### [clean-data.ipynb](clean-data.ipynb)
+
+This workbook contains code for preparing the COVID-19 data for use with scikit-learn. It demonstrates how to read data from multiple CSV files into a pandas DataFrame, handle missing values, convert positive and negative test results and other categorical values into numerical representations, and write the prepared data to a CSV file for use in a machine learning model.
+
+### [rf-sample-data.ipynb](rf-sample-data.ipynb)
+
+This workbook builds and populates a scikit-learn model using a very small dataset. Although the four-row dataset is too small to produce reliable predictions, it provides an opportunity to examine how changes in training data and algorithm choice can influence model output.
+
+### [sql-query-page.ipynb](sql-query-page.ipynb)
+
+This workbook provides a workspace for ad hoc SQL queries and pandas operations for exploring the COVID-19 dataset.
