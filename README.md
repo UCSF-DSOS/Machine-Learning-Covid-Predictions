@@ -1,5 +1,3 @@
-# Intro to Machine Learning - Predicting COVID Test Outcomes
-
 ## Description
 
 This repository contains materials for a hands-on workshop introducing supervised machine learning with Python and scikit-learn. Using COVID-19 clinical data from Carbon Health and Braid Health, participants explore how symptoms, comorbidities, vital signs, and other predictor variables can be used to estimate the probability of a positive or negative COVID-19 test.
