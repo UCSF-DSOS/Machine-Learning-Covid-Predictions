@@ -42,8 +42,6 @@ The dataset includes COVID-19 test outcomes along with patient characteristics s
 
 To run the notebooks for this workshop, you'll need to copy the data from the covidclincaldata repostitory into a local data repository in your jupyter workspace. Alternatively, you can load the data directly from the csv links in the repository. Techniques for this are covered in "Intro to Python Part 2" and "Analyzing Data with SQL and Python". 
 
-https://github.com/mdcollab/covidclinicaldata/tree/master/data/
-
 ### Data Citation
 
 ```bibtex
